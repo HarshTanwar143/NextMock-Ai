@@ -42,7 +42,7 @@ const Upgrade = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
 
-                    <span className="text-gray-700"> 10 users included </span>
+                    <span className="text-gray-700"> {item.duration=='Monthly' ? "5 " : "10 "}users included </span>
                   </li>
 
                   <li className="flex items-center gap-1">
@@ -57,7 +57,7 @@ const Upgrade = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
 
-                    <span className="text-gray-700"> 2GB of storage </span>
+                    <span className="text-gray-700"> {item.duration=='Monthly' ? "2" : "25"}GB of storage </span>
                   </li>
 
                   <li className="flex items-center gap-1">
