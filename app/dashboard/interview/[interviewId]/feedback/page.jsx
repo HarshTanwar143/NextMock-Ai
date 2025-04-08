@@ -37,7 +37,7 @@ const Feedback = ({params}) => {
       if (result.length > 0) {
         const total = result.reduce((acc, item) => acc + parseInt(item.rating), 0);
         const avgOutOf5 = total / result.length;
-        const overallOutOf10 = (avgOutOf5 * 2); 
+        const overallOutOf10 = Math.round(avgOutOf5 * 2); 
         setTotalRating(overallOutOf10);
       }
     
